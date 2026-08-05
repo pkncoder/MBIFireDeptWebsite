@@ -14,7 +14,7 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand fw-bold text-danger" href="index.html"
-                    >MBI Fire Station</a
+                    >Station 1</a
                 >
                 <button
                     class="navbar-toggler"
@@ -56,46 +56,52 @@
                 </div>
             </div>
         </nav>
-
         <main class="container my-5">
             <div class="row">
-                <div class="col-md-8 offset-md-2 text-center">
-                    <h1 class="display-4 fw-bold mb-4">
-                        Protecting Our Community
-                    </h1>
-                    <p class="lead text-muted mb-5">
-                        Welcome to the official website of the Local Fire
-                        Department. We are a volunteer-driven force dedicated to
-                        the safety and well-being of our neighbors.
-                    </p>
-                </div>
-            </div>
-
-            <div class="row mt-4">
-                <div class="col-md-5 offset-md-1 mb-4">
-                    <div class="card h-100 border-0 shadow-sm custom-card">
-                        <div class="card-body">
-                            <h3 class="h5 fw-bold">Emergency Updates</h3>
-                            <p class="text-muted">
-                                Stay informed with the latest safety protocols
-                                and community alerts.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-5 mb-4">
-                    <div class="card h-100 border-0 shadow-sm custom-card">
-                        <div class="card-body">
-                            <h3 class="h5 fw-bold">Join the Ranks</h3>
-                            <p class="text-muted">
-                                We are always looking for dedicated volunteers.
-                                <a
-                                    href="volunteer.html"
-                                    class="text-danger text-decoration-none"
-                                    >Learn more.</a
+                <div class="col-md-6 offset-md-3">
+                    <h2 class="fw-bold mb-4">Volunteer Application</h2>
+                    <div class="card border-0 shadow-sm p-4">
+                        <form id="volunteerForm">
+                            <div class="mb-3">
+                                <label for="name" class="form-label fw-bold"
+                                    >Full Name</label
                                 >
-                            </p>
-                        </div>
+                                <input
+                                    type="text"
+                                    class="form-control bg-light border-0"
+                                    id="name"
+                                    required
+                                />
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold"
+                                    >Email address</label
+                                >
+                                <input
+                                    type="email"
+                                    class="form-control bg-light border-0"
+                                    id="email"
+                                    required
+                                />
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label fw-bold"
+                                    >Why do you want to join?</label
+                                >
+                                <textarea
+                                    class="form-control bg-light border-0"
+                                    id="message"
+                                    rows="4"
+                                    required
+                                ></textarea>
+                            </div>
+                            <button
+                                type="submit"
+                                class="btn btn-danger w-100 py-2 fw-bold"
+                            >
+                                Submit Request
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>

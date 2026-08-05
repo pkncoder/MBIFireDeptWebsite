@@ -10,7 +10,7 @@ services:
       # Mount your web files into the standard Nginx html directory
       - ./web:/usr/share/nginx/html:ro
       # Mount your assets into a dedicated folder inside the container
-      - ./assets:/usr/share/nginx/assets:ro
+      - ./asset:/usr/share/nginx/asset:ro
     networks:
       - app-network
 
