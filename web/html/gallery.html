@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Local Fire Department</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="style/colors.css" />
+        <link rel="stylesheet" href="/style/root.css" />
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg custom-navbar">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img
+                        src="../../asset/image/logo.png"
+                        alt="Fire Department Logo"
+                        class="custom-nav-img"
+                    />
+                </a>
+
+                <div class="d-flex align-items-center">
+                    <ul class="navbar-nav ms-auto mb-0 flex-row gap-3">
+                        <li class="nav-item">
+                            <a
+                                class="nav-link custom-nav-link"
+                                href="officers.html"
+                                >Officers</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link custom-nav-link"
+                                href="volunteer.html"
+                                >Volunteer</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link custom-nav-link"
+                                href="donate.html"
+                                >Donate</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link custom-nav-link"
+                                href="fundraisers.html"
+                                >Fundraisers</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link custom-nav-link"
+                                href="about.html"
+                                >About the Station</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link custom-nav-link" href="#gallery"
+                                >Gallery</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main class="py-5">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <h2 class="fw-bold mb-3">Our Life-Saving Vehicles</h2>
+                    </div>
+                    <div class="container px-4">
+                        <div
+                            class="d-flex justify-content-between align-items-center mb-3"
+                        >
+                            <p class="text-muted mb-0">
+                                Explore our fleet of engines, ladders, and
+                                rescue units.
+                            </p>
+                            <button
+                                class="btn btn-outline-danger btn-sm"
+                                type="button"
+                            >
+                                View All Vehicles
+                            </button>
+                        </div>
+                        <div
+                            id="vehiclesCarousel"
+                            class="carousel slide shadow-sm rounded overflow-hidden"
+                            data-bs-ride="carousel"
+                        >
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img
+                                        src="../../asset/image/vehicle-1.jpg"
+                                        class="d-block w-100"
+                                        alt="Engine 1"
+                                        style="height: 400px; object-fit: cover"
+                                    />
+                                    <div
+                                        class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2"
+                                    >
+                                        <h5>Engine 1</h5>
+                                        <p>Primary response pumper unit.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img
+                                        src="../../asset/image/vehicle-2.jpg"
+                                        class="d-block w-100"
+                                        alt="Ladder Truck"
+                                        style="height: 400px; object-fit: cover"
+                                    />
+                                    <div
+                                        class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2"
+                                    >
+                                        <h5>Ladder 1</h5>
+                                        <p>75 ft aerial ladder truck.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button
+                                class="carousel-control-prev"
+                                type="button"
+                                data-bs-target="#vehiclesCarousel"
+                                data-bs-slide="prev"
+                            >
+                                <span
+                                    class="carousel-control-prev-icon"
+                                    aria-hidden="true"
+                                ></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button
+                                class="carousel-control-next"
+                                type="button"
+                                data-bs-target="#vehiclesCarousel"
+                                data-bs-slide="next"
+                            >
+                                <span
+                                    class="carousel-control-next-icon"
+                                    aria-hidden="true"
+                                ></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <h2 class="fw-bold mb-3">Our Community Fundraisers</h2>
+                    </div>
+                    <div class="container px-4">
+                        <div
+                            class="d-flex justify-content-between align-items-center mb-3"
+                        >
+                            <p class="text-muted mb-0">
+                                Highlights from our community events and drives.
+                            </p>
+                            <button
+                                class="btn btn-outline-danger btn-sm"
+                                type="button"
+                            >
+                                View All Events
+                            </button>
+                        </div>
+                        <div
+                            id="fundraisersGalleryCarousel"
+                            class="carousel slide shadow-sm rounded overflow-hidden"
+                            data-bs-ride="carousel"
+                        >
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img
+                                        src="../../asset/image/gallery-fundraiser-1.jpg"
+                                        class="d-block w-100"
+                                        alt="Pancake Breakfast"
+                                        style="height: 400px; object-fit: cover"
+                                    />
+                                    <div
+                                        class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2"
+                                    >
+                                        <h5>Annual Pancake Breakfast</h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img
+                                        src="../../asset/image/gallery-fundraiser-2.jpg"
+                                        class="d-block w-100"
+                                        alt="Boot Drive"
+                                        style="height: 400px; object-fit: cover"
+                                    />
+                                    <div
+                                        class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2"
+                                    >
+                                        <h5>Fill the Boot Drive</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <button
+                                class="carousel-control-prev"
+                                type="button"
+                                data-bs-target="#fundraisersGalleryCarousel"
+                                data-bs-slide="prev"
+                            >
+                                <span
+                                    class="carousel-control-prev-icon"
+                                    aria-hidden="true"
+                                ></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button
+                                class="carousel-control-next"
+                                type="button"
+                                data-bs-target="#fundraisersGalleryCarousel"
+                                data-bs-slide="next"
+                            >
+                                <span
+                                    class="carousel-control-next-icon"
+                                    aria-hidden="true"
+                                ></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <h2 class="fw-bold mb-3">Our Volunteers</h2>
+                    </div>
+                    <div class="container px-4">
+                        <div
+                            class="d-flex justify-content-between align-items-center mb-3"
+                        >
+                            <p class="text-muted mb-0">
+                                The dedicated men and women who serve around the
+                                clock.
+                            </p>
+                            <button
+                                class="btn btn-outline-danger btn-sm"
+                                type="button"
+                            >
+                                Join the Team
+                            </button>
+                        </div>
+                        <div
+                            id="volunteersCarousel"
+                            class="carousel slide shadow-sm rounded overflow-hidden"
+                            data-bs-ride="carousel"
+                        >
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img
+                                        src="../../asset/image/volunteers-1.jpg"
+                                        class="d-block w-100"
+                                        alt="Training Day"
+                                        style="height: 400px; object-fit: cover"
+                                    />
+                                    <div
+                                        class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2"
+                                    >
+                                        <h5>Weekly Live Training</h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img
+                                        src="../../asset/image/volunteers-2.jpg"
+                                        class="d-block w-100"
+                                        alt="Department Group Photo"
+                                        style="height: 400px; object-fit: cover"
+                                    />
+                                    <div
+                                        class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2"
+                                    >
+                                        <h5>Station 1 Crew</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <button
+                                class="carousel-control-prev"
+                                type="button"
+                                data-bs-target="#volunteersCarousel"
+                                data-bs-slide="prev"
+                            >
+                                <span
+                                    class="carousel-control-prev-icon"
+                                    aria-hidden="true"
+                                ></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button
+                                class="carousel-control-next"
+                                type="button"
+                                data-bs-target="#volunteersCarousel"
+                                data-bs-slide="next"
+                            >
+                                <span
+                                    class="carousel-control-next-icon"
+                                    aria-hidden="true"
+                                ></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="fw-bold mb-3">Our Station</h2>
+                    </div>
+                    <div class="container px-4">
+                        <div
+                            class="d-flex justify-content-between align-items-center mb-3"
+                        >
+                            <p class="text-muted mb-0">
+                                A look inside our facility and bays.
+                            </p>
+                            <button
+                                class="btn btn-outline-danger btn-sm"
+                                type="button"
+                            >
+                                Take a Tour
+                            </button>
+                        </div>
+                        <div
+                            id="stationCarousel"
+                            class="carousel slide shadow-sm rounded overflow-hidden"
+                            data-bs-ride="carousel"
+                        >
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img
+                                        src="../../asset/image/station-1.jpg"
+                                        class="d-block w-100"
+                                        alt="Station Exterior"
+                                        style="height: 400px; object-fit: cover"
+                                    />
+                                    <div
+                                        class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2"
+                                    >
+                                        <h5>Station 1 Main Building</h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img
+                                        src="../../asset/image/station-2.jpg"
+                                        class="d-block w-100"
+                                        alt="Apparatus Bay"
+                                        style="height: 400px; object-fit: cover"
+                                    />
+                                    <div
+                                        class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2"
+                                    >
+                                        <h5>Apparatus Bay</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <button
+                                class="carousel-control-prev"
+                                type="button"
+                                data-bs-target="#stationCarousel"
+                                data-bs-slide="prev"
+                            >
+                                <span
+                                    class="carousel-control-prev-icon"
+                                    aria-hidden="true"
+                                ></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button
+                                class="carousel-control-next"
+                                type="button"
+                                data-bs-target="#stationCarousel"
+                                data-bs-slide="next"
+                            >
+                                <span
+                                    class="carousel-control-next-icon"
+                                    aria-hidden="true"
+                                ></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="../script/root.js"></script>
+    </body>
+</html>

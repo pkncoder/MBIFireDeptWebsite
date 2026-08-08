@@ -8,48 +8,61 @@
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="../style/root.css" />
+
+        <link rel="stylesheet" href="/style/colors.css" />
+        <link rel="stylesheet" href="/style/root.css" />
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-lg custom-navbar">
             <div class="container">
-                <a class="navbar-brand fw-bold text-danger" href="index.html"
-                    >Station 1</a
-                >
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav"
-                >
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
+                <a class="navbar-brand" href="index.html">
+                    <img
+                        src="../../asset/image/logo.png"
+                        alt="Fire Department Logo"
+                        class="custom-nav-img"
+                    />
+                </a>
+
+                <div class="d-flex align-items-center">
+                    <ul class="navbar-nav ms-auto mb-0 flex-row gap-3">
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="officers.html"
+                            <a
+                                class="nav-link custom-nav-link"
+                                href="officers.html"
                                 >Officers</a
                             >
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="calendar.html"
-                                >Calendar</a
-                            >
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="volunteer.html"
+                            <a
+                                class="nav-link custom-nav-link"
+                                href="volunteer.html"
                                 >Volunteer</a
                             >
                         </li>
                         <li class="nav-item">
                             <a
-                                class="nav-link btn btn-danger text-white ms-lg-3 px-3"
+                                class="nav-link custom-nav-link"
                                 href="donate.html"
                                 >Donate</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link custom-nav-link"
+                                href="fundraisers.html"
+                                >Fundraisers</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link custom-nav-link"
+                                href="about.html"
+                                >About the Station</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link custom-nav-link" href="#gallery"
+                                >Gallery</a
                             >
                         </li>
                     </ul>
@@ -57,29 +70,56 @@
             </div>
         </nav>
 
-        <main class="container my-5">
-            <div class="row">
-                <div class="col-lg-6 offset-lg-3">
-                    <h2
-                        class="fw-bold mb-4 border-bottom pb-2 border-danger border-3 d-inline-block"
-                    >
-                        About Us
-                    </h2>
-                    <p class="text-muted lh-lg">
-                        Established in 1920, the Local Fire Department has been
-                        entirely volunteer-operated for over a century. Our
-                        mission is to provide rapid, professional emergency
-                        response and fire prevention education to our community.
-                    </p>
-                    <p class="text-muted lh-lg">
-                        We operate out of a central station with a fleet of
-                        modern apparatus, maintained through the generous
-                        support of our community donations.
-                    </p>
+        <main class="py-5">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <h2 class="fw-bold mb-3">Established in...</h2>
+                    </div>
+                    <div class="container px-4">
+                        <p class="text-muted leading-relaxed">
+                            For over a century, our station has stood as a
+                            beacon of safety and dedication. Founded by a small
+                            group of local citizens who recognized the need for
+                            coordinated fire response, our organization has
+                            grown from a single hand-drawn hose cart to a fully
+                            equipped modern department.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <h2 class="fw-bold mb-3">Today We...</h2>
+                    </div>
+                    <div class="container px-4">
+                        <p class="text-muted leading-relaxed">
+                            Today, our department protects thousands of
+                            residents across our service area. Operating
+                            24/7/365, our brave volunteer firefighters answer
+                            hundreds of calls each year ranging from structure
+                            fires and medical emergencies to motor vehicle
+                            accidents and hazardous condition responses.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="fw-bold mb-3">How Do We...</h2>
+                    </div>
+                    <div class="container px-4">
+                        <p class="text-muted leading-relaxed">
+                            We rely on a combination of local government
+                            funding, community grants, and generous personal
+                            donations. Our department is 100% volunteer-run,
+                            meaning every member donates their time to protect
+                            their neighbors without financial compensation.
+                        </p>
+                    </div>
                 </div>
             </div>
         </main>
-
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
         <script src="../script/root.js"></script>
