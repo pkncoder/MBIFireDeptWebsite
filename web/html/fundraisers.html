@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Local Fire Department</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="../style/root.css" />
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg custom-navbar">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img
+                        src="../../asset/image/logo.png"
+                        alt="Fire Department Logo"
+                        class="custom-nav-img"
+                    />
+                </a>
+
+                <div class="d-flex align-items-center">
+                    <ul class="navbar-nav ms-auto mb-0 flex-row gap-3">
+                        <li class="nav-item">
+                            <a
+                                class="nav-link custom-nav-link"
+                                href="officers.html"
+                                >Officers</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link custom-nav-link"
+                                href="volunteer.html"
+                                >Volunteer</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link custom-nav-link"
+                                href="donate.html"
+                                >Donate</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link custom-nav-link"
+                                href="fundraisers.html"
+                                >Fundraisers</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link custom-nav-link"
+                                href="about.html"
+                                >About the Station</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link custom-nav-link" href="#gallery"
+                                >Gallery</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <main class="py-5">
+            <div class="container">
+                <div class="row align-items-center mb-5">
+                    <div class="col-md-5 mb-4 mb-md-0">
+                        <h2 class="fw-bold mb-3">Community Fundraisers</h2>
+                        <p class="text-muted leading-relaxed">
+                            Our department relies on community support to
+                            upgrade lifesaving equipment and run educational
+                            programs. Explore our ongoing and upcoming
+                            fundraising initiatives below.
+                        </p>
+                    </div>
+                    <div class="col-md-7 container fundraiser-gallery">
+                        <div
+                            id="fundraiserCarousel"
+                            class="carousel slide shadow-sm rounded overflow-hidden"
+                            data-bs-ride="carousel"
+                        >
+                            <div class="carousel-indicators">
+                                <button
+                                    type="button"
+                                    data-bs-target="#fundraiserCarousel"
+                                    data-bs-slide-to="0"
+                                    class="active"
+                                    aria-current="true"
+                                    aria-label="Slide 1"
+                                ></button>
+                                <button
+                                    type="button"
+                                    data-bs-target="#fundraiserCarousel"
+                                    data-bs-slide-to="1"
+                                    aria-label="Slide 2"
+                                ></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img
+                                        src="../../asset/image/fundraiser-1.jpg"
+                                        class="d-block w-100"
+                                        alt="Annual Pancake Breakfast"
+                                        style="height: 350px; object-fit: cover"
+                                    />
+                                    <div
+                                        class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2"
+                                    >
+                                        <h5>Annual Pancake Breakfast</h5>
+                                        <p>
+                                            Join us at the station for food and
+                                            fun.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img
+                                        src="../../asset/image/fundraiser-2.jpg"
+                                        class="d-block w-100"
+                                        alt="Equipment Drive"
+                                        style="height: 350px; object-fit: cover"
+                                    />
+                                    <div
+                                        class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2"
+                                    >
+                                        <h5>New Gear Fund Drive</h5>
+                                        <p>
+                                            Helping equip our volunteer
+                                            firefighters with updated gear.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button
+                                class="carousel-control-prev"
+                                type="button"
+                                data-bs-target="#fundraiserCarousel"
+                                data-bs-slide="prev"
+                            >
+                                <span
+                                    class="carousel-control-prev-icon"
+                                    aria-hidden="true"
+                                ></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button
+                                class="carousel-control-next"
+                                type="button"
+                                data-bs-target="#fundraiserCarousel"
+                                data-bs-slide="next"
+                            >
+                                <span
+                                    class="carousel-control-next-icon"
+                                    aria-hidden="true"
+                                ></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row border-top pt-4">
+                    <div class="col-12">
+                        <h2 class="fw-bold text-center text-md-start">
+                            Upcoming Events & Schedule
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="../script/root.js"></script>
+    </body>
+</html>
