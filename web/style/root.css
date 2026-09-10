@@ -23,6 +23,11 @@
     color: #4a4a4a !important;
     padding: 0.5rem 0.75rem !important;
     transition: color 0.2s ease;
+    transition: transform 0.2s ease;
+}
+
+.custom-nav-link:hover {
+    transform: scale(1.1);
 }
 
 .custom-nav-link:hover,
@@ -65,5 +70,3 @@ body {
 .img-team {}
 
 .img-trucks {}
-
-

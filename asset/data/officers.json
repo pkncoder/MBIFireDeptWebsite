@@ -1,7 +1,16 @@
-{
+[
     {
-        "name": "Your mom",
-        "title": "the one who has got it on",
-        "bio": "Stacy's Mom!!"
+        "name": "Jane Doe",
+        "title": "President",
+        "bio": "Leading community outreach initiatives for over five years."
+    },
+    {
+        "name": "John Smith",
+        "title": "Vice President"
+    },
+    {
+        "name": "Alex Johnson",
+        "title": "Treasurer",
+        "bio": "Managing operational finances and event budgeting."
     }
-}
+]
